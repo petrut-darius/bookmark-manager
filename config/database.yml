@@ -26,6 +26,7 @@ test:
 production:
   primary:
     <<: *default
+    adapter: postgresql
     database: storage/production.sqlite3
   cache:
     <<: *default
