@@ -67,8 +67,6 @@ gem "devise-bootstrap-views", "~> 1.0"
 
 
 gem "sqlite3", group: :development
-gem "pg", "0.18.1", group: :production
+gem 'pg', '~> 1.4', group: :production
 gem "rails_12factor", group: :production
 
-
-gem "pg", "0.18.1", platforms: :ruby, git: nil, path: nil
