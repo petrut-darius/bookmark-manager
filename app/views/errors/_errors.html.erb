@@ -1,0 +1,10 @@
+<% if @link.errors.any? %>
+  <div class="alert alert-danger">
+    <h4><%= pluralize(@link.errors.count, "error") %> prohibited this link from being saved:</h4>
+    <ul>
+      <% @link.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

@@ -1,0 +1,20 @@
+<h1><%= t('.add_link') %></h1>
+
+<%= render "errors/errors"%>
+
+<%= form_for(@link,  url: links_path, data: {turbo: false}) do |f| %>
+
+  <div class="form-group">
+    <%= f.label :url %>
+    <%= f.text_field :url, autofocus: true, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :label %>
+    <%= f.text_field :label, autofocus: true, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit "Save link", class: 'btn btn-primary' %>
+  </div>
+<% end %>

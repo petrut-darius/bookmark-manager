@@ -1,0 +1,10 @@
+<h1>This are the links you have saved</h1>
+
+<% if @links.any?%>
+  <% @links.each do |link|%>
+    <p><strong><%= link.label %>:</strong>&nbsp;&nbsp;&nbsp;<%= link.url %></p>
+  <% end %>    
+<% end %>
+
+<turbo-frame id="resulted_links">
+</turbo-frame>

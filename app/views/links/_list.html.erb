@@ -1,0 +1,12 @@
+<turbo-frame id="resulted_links">
+  <% if links.any? %>
+    <p>Rezultate pentru "<%= label %>":</p>
+    <ul>
+      <% links.each do |link| %>
+        <li><%= link.url %></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>Niciun articol găsit pentru "<%= label %>"</p>
+  <% end %>
+</turbo-frame>
